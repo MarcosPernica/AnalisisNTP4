@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 def plotTDEV(TE):
 	a = allantools.Dataset(data=TE)
-	a.compute("tdev")
+	a.compute("TDEV [s]")
 
 	plotter = allantools.Plot()
 	plotter.plot(a, errorbars=True, grid=True)
